@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Updated NFL Analytics </title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>Updated NFL Analytics</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14588,14 +14588,13 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[149]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># By Tyran Javon Johnson</span>
 
 <span class="c1"># This project demonstrates a few of the capabilities of python.Purpose is to </span>
 <span class="c1"># gain insight and a enhanced understanding of player and team performances in the NFL</span>
-
 <span class="c1"># Libraries required to start</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -14612,12 +14611,12 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[150]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All data collected on players is year by year, not by season. Each year a team plays 14-16 games, and 2-3 games in the following year</span>
 <span class="c1"># First lets pull some data and start solving some questions. </span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/Team Stats/nfl_offense_stats.csv&quot;</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\ALL NFL pbp\Team Stats\nfl_offense_stats.csv&quot;</span><span class="p">)</span>
 <span class="c1">#df.head()</span>
 </pre></div>
 
@@ -14631,7 +14630,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[151]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># offensive NFL plays 2021</span>
@@ -14648,11 +14647,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[152]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Recieving stats</span>
-<span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/player_stats/2021_player_stats/2021_player_receiving.csv&quot;</span><span class="p">)</span>
+<span class="n">receivers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\ALL NFL pbp\player_stats\2021_player_stats\2021_player_receiving.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14665,11 +14664,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[153]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rushing stats</span>
-<span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/player_stats/2021_player_stats/2021_player_rushing.csv&quot;</span><span class="p">)</span>
+<span class="n">rushers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\ALL NFL pbp\player_stats\2021_player_stats\2021_player_rushing.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14682,11 +14681,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[154]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#passing stats</span>
-<span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/player_stats/2021_player_stats/2021_player_passing.csv&quot;</span><span class="p">)</span>
+<span class="n">passers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\ALL NFL pbp\player_stats\2021_player_stats\2021_player_passing.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14699,11 +14698,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[155]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All stats in one</span>
-<span class="n">df_merge</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df3</span><span class="p">,</span> <span class="n">df4</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;player&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Rushers and Receiever stats into one</span>
+<span class="n">nonpassers</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">rushers</span><span class="p">,</span> <span class="n">receivers</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;player&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -14716,11 +14715,11 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[156]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Below is offensive stats for rushing, passing and recieving. Before merging, I made column in each df was unique minus the most left column (&quot;player&quot;)</span>
-<span class="n">off_2021</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_merge</span><span class="p">,</span> <span class="n">df5</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;player&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All Offensive stats for players in 2021</span>
+<span class="n">off_2021</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">nonpassers</span><span class="p">,</span> <span class="n">passers</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s2">&quot;player&quot;</span><span class="p">)</span>
 <span class="n">off_2021</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
@@ -14739,7 +14738,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[156]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -14763,15 +14762,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <tr style="text-align: right;">
       <th></th>
       <th>player</th>
-      <th>rec</th>
-      <th>rec_yds</th>
-      <th>rec_td</th>
-      <th>rec_20+</th>
-      <th>rec_40+</th>
-      <th>rec_lng</th>
-      <th>rec_1st</th>
-      <th>rec_1st%</th>
-      <th>rec_fum</th>
+      <th>rush_yds</th>
+      <th>rush_att</th>
+      <th>rush_td</th>
+      <th>rush_20+</th>
+      <th>Rush_40+</th>
+      <th>rush_lng</th>
+      <th>rus_1st</th>
+      <th>rush_1st%</th>
+      <th>rush_fum</th>
       <th>...</th>
       <th>pass_td</th>
       <th>int</th>
@@ -14788,40 +14787,112 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   <tbody>
     <tr>
       <th>0</th>
-      <td>Justin Jefferson</td>
-      <td>108</td>
-      <td>1616</td>
+      <td>Ezekiel Elliott</td>
+      <td>1002</td>
+      <td>237</td>
       <td>10</td>
-      <td>27</td>
-      <td>5</td>
-      <td>56</td>
-      <td>75</td>
-      <td>0.694</td>
+      <td>3</td>
+      <td>1</td>
+      <td>47</td>
+      <td>55</td>
+      <td>4.309</td>
       <td>1</td>
       <td>...</td>
       <td>0</td>
       <td>0</td>
-      <td>106.2</td>
-      <td>2</td>
-      <td>0.667</td>
-      <td>1</td>
+      <td>83.3</td>
       <td>0</td>
-      <td>24</td>
+      <td>0.000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>4</td>
       <td>0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>Deebo Samuel</td>
-      <td>77</td>
-      <td>1405</td>
-      <td>6</td>
-      <td>23</td>
+      <td>Derrick Henry</td>
+      <td>937</td>
+      <td>219</td>
+      <td>10</td>
+      <td>3</td>
+      <td>2</td>
+      <td>76</td>
+      <td>49</td>
+      <td>4.469</td>
+      <td>1</td>
+      <td>...</td>
+      <td>1</td>
+      <td>0</td>
+      <td>127.1</td>
+      <td>1</td>
+      <td>1.000</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kyler Murray</td>
+      <td>423</td>
+      <td>88</td>
+      <td>5</td>
+      <td>1</td>
+      <td>1</td>
+      <td>57</td>
+      <td>25</td>
+      <td>3.520</td>
+      <td>10</td>
+      <td>...</td>
+      <td>24</td>
+      <td>10</td>
+      <td>100.6</td>
+      <td>172</td>
+      <td>0.358</td>
+      <td>49</td>
       <td>9</td>
-      <td>83</td>
-      <td>51</td>
-      <td>0.662</td>
+      <td>77</td>
+      <td>31</td>
+      <td>286</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Taysom Hill</td>
+      <td>374</td>
+      <td>70</td>
+      <td>5</td>
+      <td>3</td>
+      <td>1</td>
+      <td>44</td>
+      <td>26</td>
+      <td>2.692</td>
+      <td>1</td>
+      <td>...</td>
       <td>4</td>
+      <td>5</td>
+      <td>75.4</td>
+      <td>43</td>
+      <td>0.321</td>
+      <td>14</td>
+      <td>2</td>
+      <td>70</td>
+      <td>9</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Deebo Samuel</td>
+      <td>365</td>
+      <td>59</td>
+      <td>8</td>
+      <td>5</td>
+      <td>1</td>
+      <td>49</td>
+      <td>21</td>
+      <td>2.810</td>
+      <td>0</td>
       <td>...</td>
       <td>1</td>
       <td>0</td>
@@ -14831,78 +14902,6 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
       <td>1</td>
       <td>0</td>
       <td>24</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Christian Kirk</td>
-      <td>77</td>
-      <td>982</td>
-      <td>5</td>
-      <td>16</td>
-      <td>4</td>
-      <td>50</td>
-      <td>44</td>
-      <td>0.571</td>
-      <td>0</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>118.8</td>
-      <td>1</td>
-      <td>1.000</td>
-      <td>1</td>
-      <td>0</td>
-      <td>33</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jakobi Meyers</td>
-      <td>83</td>
-      <td>866</td>
-      <td>2</td>
-      <td>12</td>
-      <td>0</td>
-      <td>39</td>
-      <td>42</td>
-      <td>0.506</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>118.8</td>
-      <td>1</td>
-      <td>0.500</td>
-      <td>1</td>
-      <td>0</td>
-      <td>30</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Tyler Boyd</td>
-      <td>67</td>
-      <td>828</td>
-      <td>5</td>
-      <td>10</td>
-      <td>2</td>
-      <td>68</td>
-      <td>37</td>
-      <td>0.552</td>
-      <td>1</td>
-      <td>...</td>
-      <td>0</td>
-      <td>0</td>
-      <td>118.8</td>
-      <td>1</td>
-      <td>1.000</td>
-      <td>1</td>
-      <td>1</td>
-      <td>46</td>
       <td>0</td>
       <td>0</td>
     </tr>
@@ -14923,7 +14922,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[157]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">off_2021</span><span class="o">.</span><span class="n">columns</span>
@@ -14944,226 +14943,19 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[157]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Index([&#39;player&#39;, &#39;rec&#39;, &#39;rec_yds&#39;, &#39;rec_td&#39;, &#39;rec_20+&#39;, &#39;rec_40+&#39;, &#39;rec_lng&#39;,
-       &#39;rec_1st&#39;, &#39;rec_1st%&#39;, &#39;rec_fum&#39;, &#39;tgts&#39;, &#39;yd/rec&#39;, &#39;rush_yds&#39;,
-       &#39;rush_att&#39;, &#39;rush_td&#39;, &#39;rush_20+&#39;, &#39;Rush_40+&#39;, &#39;rush_lng&#39;, &#39;rus_1st&#39;,
-       &#39;rush_1st%&#39;, &#39;rush_fum&#39;, &#39;pass _yds&#39;, &#39;pass_yat&#39;, &#39;pass_att&#39;,
+<pre>Index([&#39;player&#39;, &#39;rush_yds&#39;, &#39;rush_att&#39;, &#39;rush_td&#39;, &#39;rush_20+&#39;, &#39;Rush_40+&#39;,
+       &#39;rush_lng&#39;, &#39;rus_1st&#39;, &#39;rush_1st%&#39;, &#39;rush_fum&#39;, &#39;rec&#39;, &#39;rec_yds&#39;,
+       &#39;rec_td&#39;, &#39;rec_20+&#39;, &#39;rec_40+&#39;, &#39;rec_lng&#39;, &#39;rec_1st&#39;, &#39;rec_1st%&#39;,
+       &#39;rec_fum&#39;, &#39;tgts&#39;, &#39;yd/rec&#39;, &#39;pass _yds&#39;, &#39;pass_yat&#39;, &#39;pass_att&#39;,
        &#39;pass_cmp&#39;, &#39;cmp%&#39;, &#39;pass_td&#39;, &#39;int&#39;, &#39;rate&#39;, &#39;pass_1st&#39;, &#39;pass_1st%&#39;,
        &#39;pass_20+&#39;, &#39;pass_40+&#39;, &#39;pass_long&#39;, &#39;sck&#39;, &#39;scky&#39;],
       dtype=&#39;object&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[158]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Concating the dfs results in me losing some data.</span>
-<span class="n">df_concat</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df3</span><span class="p">,</span> <span class="n">df4</span><span class="p">,</span> <span class="n">df5</span><span class="p">])</span>
-<span class="n">df_concat</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[158]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>rec</th>
-      <th>rec_yds</th>
-      <th>rec_td</th>
-      <th>rec_20+</th>
-      <th>rec_40+</th>
-      <th>rec_lng</th>
-      <th>rec_1st</th>
-      <th>rec_1st%</th>
-      <th>rec_fum</th>
-      <th>...</th>
-      <th>pass_td</th>
-      <th>int</th>
-      <th>rate</th>
-      <th>pass_1st</th>
-      <th>pass_1st%</th>
-      <th>pass_20+</th>
-      <th>pass_40+</th>
-      <th>pass_long</th>
-      <th>sck</th>
-      <th>scky</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Cooper Kupp</td>
-      <td>145.0</td>
-      <td>1947.0</td>
-      <td>16.0</td>
-      <td>30.0</td>
-      <td>9.0</td>
-      <td>59.0</td>
-      <td>89.0</td>
-      <td>0.614</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Justin Jefferson</td>
-      <td>108.0</td>
-      <td>1616.0</td>
-      <td>10.0</td>
-      <td>27.0</td>
-      <td>5.0</td>
-      <td>56.0</td>
-      <td>75.0</td>
-      <td>0.694</td>
-      <td>1.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Davante Adams</td>
-      <td>123.0</td>
-      <td>1553.0</td>
-      <td>11.0</td>
-      <td>19.0</td>
-      <td>4.0</td>
-      <td>59.0</td>
-      <td>84.0</td>
-      <td>0.683</td>
-      <td>0.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Ja'Marr Chase</td>
-      <td>81.0</td>
-      <td>1455.0</td>
-      <td>13.0</td>
-      <td>22.0</td>
-      <td>8.0</td>
-      <td>82.0</td>
-      <td>56.0</td>
-      <td>0.691</td>
-      <td>2.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Deebo Samuel</td>
-      <td>77.0</td>
-      <td>1405.0</td>
-      <td>6.0</td>
-      <td>23.0</td>
-      <td>9.0</td>
-      <td>83.0</td>
-      <td>51.0</td>
-      <td>0.662</td>
-      <td>4.0</td>
-      <td>...</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 36 columns</p>
-</div>
 </div>
 
 </div>
@@ -15177,7 +14969,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[159]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is adding Yahoo default fantasy points per offensive stats minus any special teams points scored for offensive players.</span>
@@ -15205,7 +14997,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[160]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Total Fantasy points for offensive players during the 2021 season</span>
@@ -15222,306 +15014,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[161]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">off_2021</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-<span class="c1"># I want to find the average points scored for each player, but unfortunately games played is missing</span>
-<span class="c1"># To fix this problem, I will extract this df and add more details to it using excel</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[161]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>player</th>
-      <th>rec</th>
-      <th>rec_yds</th>
-      <th>rec_td</th>
-      <th>rec_20+</th>
-      <th>rec_40+</th>
-      <th>rec_lng</th>
-      <th>rec_1st</th>
-      <th>rec_1st%</th>
-      <th>rec_fum</th>
-      <th>...</th>
-      <th>fan_pass</th>
-      <th>fan_int</th>
-      <th>fan_pass_td</th>
-      <th>fan_rush_td</th>
-      <th>fan_rec_yds</th>
-      <th>fan_rec_td</th>
-      <th>fan_rec</th>
-      <th>fan_rush_fum</th>
-      <th>fan_rec_fum</th>
-      <th>total_fp</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Justin Jefferson</td>
-      <td>108</td>
-      <td>1616</td>
-      <td>10</td>
-      <td>27</td>
-      <td>5</td>
-      <td>56</td>
-      <td>75</td>
-      <td>0.694</td>
-      <td>1</td>
-      <td>...</td>
-      <td>1.75</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>202.00</td>
-      <td>50</td>
-      <td>54.0</td>
-      <td>0</td>
-      <td>-2</td>
-      <td>307.50</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Deebo Samuel</td>
-      <td>77</td>
-      <td>1405</td>
-      <td>6</td>
-      <td>23</td>
-      <td>9</td>
-      <td>83</td>
-      <td>51</td>
-      <td>0.662</td>
-      <td>4</td>
-      <td>...</td>
-      <td>1.20</td>
-      <td>0</td>
-      <td>5</td>
-      <td>40</td>
-      <td>175.62</td>
-      <td>30</td>
-      <td>38.5</td>
-      <td>0</td>
-      <td>-8</td>
-      <td>327.94</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Christian Kirk</td>
-      <td>77</td>
-      <td>982</td>
-      <td>5</td>
-      <td>16</td>
-      <td>4</td>
-      <td>50</td>
-      <td>44</td>
-      <td>0.571</td>
-      <td>0</td>
-      <td>...</td>
-      <td>1.65</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>122.75</td>
-      <td>25</td>
-      <td>38.5</td>
-      <td>0</td>
-      <td>0</td>
-      <td>189.28</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Jakobi Meyers</td>
-      <td>83</td>
-      <td>866</td>
-      <td>2</td>
-      <td>12</td>
-      <td>0</td>
-      <td>39</td>
-      <td>42</td>
-      <td>0.506</td>
-      <td>1</td>
-      <td>...</td>
-      <td>2.25</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>108.25</td>
-      <td>10</td>
-      <td>41.5</td>
-      <td>0</td>
-      <td>-2</td>
-      <td>161.12</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Tyler Boyd</td>
-      <td>67</td>
-      <td>828</td>
-      <td>5</td>
-      <td>10</td>
-      <td>2</td>
-      <td>68</td>
-      <td>37</td>
-      <td>0.552</td>
-      <td>1</td>
-      <td>...</td>
-      <td>2.30</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>103.50</td>
-      <td>25</td>
-      <td>33.5</td>
-      <td>0</td>
-      <td>-2</td>
-      <td>165.05</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 47 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[162]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Saving off_2021 as an csv file</span>
-
-<span class="n">off_2021</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;off_2021.csv&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">off_2021</span><span class="o">.</span><span class="n">to_excel</span><span class="p">(</span><span class="s1">&#39;offf_2021.xlsx&#39;</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Owner\AppData\Local\Temp\ipykernel_14692\2443726568.py:4: UserWarning: Pandas requires version &#39;3.0.5&#39; or newer of &#39;xlsxwriter&#39; (version &#39;3.0.3&#39; currently installed).
-  off_2021.to_excel(&#39;offf_2021.xlsx&#39;, index=False)
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[163]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">off_2021</span><span class="o">.</span><span class="n">columns</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[163]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>Index([&#39;player&#39;, &#39;rec&#39;, &#39;rec_yds&#39;, &#39;rec_td&#39;, &#39;rec_20+&#39;, &#39;rec_40+&#39;, &#39;rec_lng&#39;,
-       &#39;rec_1st&#39;, &#39;rec_1st%&#39;, &#39;rec_fum&#39;, &#39;tgts&#39;, &#39;yd/rec&#39;, &#39;rush_yds&#39;,
-       &#39;rush_att&#39;, &#39;rush_td&#39;, &#39;rush_20+&#39;, &#39;Rush_40+&#39;, &#39;rush_lng&#39;, &#39;rus_1st&#39;,
-       &#39;rush_1st%&#39;, &#39;rush_fum&#39;, &#39;pass _yds&#39;, &#39;pass_yat&#39;, &#39;pass_att&#39;,
-       &#39;pass_cmp&#39;, &#39;cmp%&#39;, &#39;pass_td&#39;, &#39;int&#39;, &#39;rate&#39;, &#39;pass_1st&#39;, &#39;pass_1st%&#39;,
-       &#39;pass_20+&#39;, &#39;pass_40+&#39;, &#39;pass_long&#39;, &#39;sck&#39;, &#39;scky&#39;, &#39;fan_rush&#39;,
-       &#39;fan_pass&#39;, &#39;fan_int&#39;, &#39;fan_pass_td&#39;, &#39;fan_rush_td&#39;, &#39;fan_rec_yds&#39;,
-       &#39;fan_rec_td&#39;, &#39;fan_rec&#39;, &#39;fan_rush_fum&#39;, &#39;fan_rec_fum&#39;, &#39;total_fp&#39;],
-      dtype=&#39;object&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[164]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Receiving Average Metrics</span>
@@ -15543,21 +15036,21 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[164]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
 
 
 
 
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>rec          41.466667
-rec_yds     536.466667
-rec_td        2.733333
-rec_20+       7.466667
-rec_40+       1.800000
-rec_lng      37.933333
-rec_1st      23.466667
-rec_1st%      0.489533
-rec_fum       0.600000
+<pre>rush_yds     252.266667
+rush_att      53.933333
+rush_td        2.866667
+rush_20+       1.200000
+Rush_40+       0.466667
+rush_lng      28.800000
+rus_1st       14.666667
+rush_1st%      2.631467
+rush_fum       1.133333
 dtype: float64</pre>
 </div>
 
@@ -15572,176 +15065,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[165]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># theres a ton of columns in the df. Here is a way to see all the column names</span>
-<span class="n">nfl</span><span class="o">.</span><span class="n">head</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[165]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-      <th>2</th>
-      <th>3</th>
-      <th>4</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>player</th>
-      <td>Garrett Bradbury</td>
-      <td>C.J. Goodwin</td>
-      <td>Adam Prentice</td>
-      <td>Adam Prentice</td>
-      <td>Andy Janovich</td>
-    </tr>
-    <tr>
-      <th>year</th>
-      <td>2022</td>
-      <td>2022</td>
-      <td>2022</td>
-      <td>2022</td>
-      <td>2022</td>
-    </tr>
-    <tr>
-      <th>position</th>
-      <td>C</td>
-      <td>CB</td>
-      <td>FB</td>
-      <td>FB</td>
-      <td>FB</td>
-    </tr>
-    <tr>
-      <th>team</th>
-      <td>MIN</td>
-      <td>DAL</td>
-      <td>NOR</td>
-      <td>NOR</td>
-      <td>CLE</td>
-    </tr>
-    <tr>
-      <th>pass_cmp</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>Humidity</th>
-      <td>60</td>
-      <td>45</td>
-      <td>45</td>
-      <td>45</td>
-      <td>60</td>
-    </tr>
-    <tr>
-      <th>wind_speed</th>
-      <td>9</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>vegas_line</th>
-      <td>-13.0</td>
-      <td>-3.0</td>
-      <td>-6.5</td>
-      <td>-3.5</td>
-      <td>-2.0</td>
-    </tr>
-    <tr>
-      <th>vegas_favorite</th>
-      <td>GNB</td>
-      <td>DAL</td>
-      <td>NOR</td>
-      <td>NOR</td>
-      <td>PIT</td>
-    </tr>
-    <tr>
-      <th>over_under</th>
-      <td>42.5</td>
-      <td>51.0</td>
-      <td>37.5</td>
-      <td>40.0</td>
-      <td>42.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>66 rows × 5 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[166]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Average for a few metrics</span>
@@ -15763,7 +15087,7 @@ dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[166]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[16]:</div>
 
 
 
@@ -15789,7 +15113,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[167]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Max for the above metrics</span>
@@ -15811,7 +15135,7 @@ dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[167]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[17]:</div>
 
 
 
@@ -15848,7 +15172,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[168]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nfl_max_yac</span> <span class="o">=</span> <span class="n">nfl</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">49</span><span class="p">:</span><span class="mi">50</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">)</span>
@@ -15864,7 +15188,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[169]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Im all over the place. This is the max rec yac.</span>
@@ -15906,7 +15230,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[170]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mean_yac</span> <span class="o">=</span> <span class="p">(</span><span class="n">nfl</span><span class="p">[</span><span class="s1">&#39;rec_yac&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">nfl</span><span class="p">[</span><span class="s1">&#39;rec_yac&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -15957,7 +15281,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[171]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First I will try to set a value of 300+ passing yards.</span>
@@ -15980,7 +15304,7 @@ dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[171]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[21]:</div>
 
 
 
@@ -16308,7 +15632,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[172]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here is a second way to get the same table which shows all passing yards of 300 and greater.</span>
@@ -16325,7 +15649,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[173]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">nfl_qb</span> <span class="o">=</span> <span class="n">nfl</span><span class="p">[</span><span class="n">nfl_qb_top_tier</span><span class="p">]</span>
@@ -16341,7 +15665,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[174]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Now I will try to count exactly how many times each player had over 300 passing yards in a game</span>
@@ -16358,7 +15682,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[175]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">new_qb_df</span> <span class="o">=</span> <span class="n">nfl_qb</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s2">&quot;pass_yds&quot;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -16374,7 +15698,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[176]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">results</span> <span class="o">=</span> <span class="n">new_qb_df</span><span class="p">[</span><span class="s1">&#39;player&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -16390,7 +15714,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[177]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The above shows leaders for the most 300 more passing yards in a game from 2019 to 2022.</span>
@@ -16406,7 +15730,7 @@ dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[178]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Testing a function </span>
@@ -16435,7 +15759,7 @@ dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[178]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[28]:</div>
 
 
 
@@ -16461,7 +15785,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[179]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># heres a bar graph for players with the most 300 or more yards thrown in a game since 2019.</span>
@@ -16483,7 +15807,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[179]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[29]:</div>
 
 
 
@@ -16521,7 +15845,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[180]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># All the occurrences a QB has thrown for 3 tds or more in a game.</span>
@@ -16544,7 +15868,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[180]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[30]:</div>
 
 
 
@@ -16883,7 +16207,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[181]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is what I got so far. I will need to work on cleaning up my results to show only QB stats</span>
@@ -16907,7 +16231,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[181]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[31]:</div>
 
 
 
@@ -17246,7 +16570,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[182]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This syntax shows a dataframse of the primary offensive skill positions</span>
@@ -17264,7 +16588,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[183]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This will only show QB data</span>
@@ -17282,7 +16606,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[184]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># WRs only</span>
@@ -17300,7 +16624,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[185]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># RBs only</span>
@@ -17318,7 +16642,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[186]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TEs only</span>
@@ -17347,7 +16671,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[187]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top receivers in the league in yards.</span>
@@ -17367,7 +16691,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[188]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top 5 WR in the NFL</span>
@@ -17390,7 +16714,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[188]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[38]:</div>
 
 
 
@@ -17457,7 +16781,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[189]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Yards per reception shows how many yards a receiver gain by every catch. </span>
@@ -17481,7 +16805,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[190]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wr1</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;rec_yds&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -17502,7 +16826,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[190]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[40]:</div>
 
 
 
@@ -17697,11 +17021,15 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[192]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here is the percentage of yards after catch for the top 25 wrs. </span>
-<span class="n">top_wr</span><span class="p">[</span><span class="s1">&#39;rec_yac&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">top_wr</span><span class="p">[</span><span class="s1">&#39;rec_yds&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span>
+<span class="n">top_wr</span><span class="p">[</span><span class="s1">&#39;yac_percentage&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">top_wr</span><span class="p">[</span><span class="s1">&#39;rec_yac&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">top_wr</span><span class="p">[</span><span class="s1">&#39;rec_yds&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Sorting the DataFrame by &#39;yac_percentage&#39; in descending order and selecting the top 20</span>
+<span class="n">top_20_wr_by_yac_percentage</span> <span class="o">=</span> <span class="n">top_wr</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;yac_percentage&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_20_wr_by_yac_percentage</span><span class="p">)</span>
 <span class="c1"># Hey look at Jarvis Landry sitting at 49.8% of yards after the catch. I cant wait to see what he can do for the BLACK &amp; GOLD!!</span>
 </pre></div>
 
@@ -17720,66 +17048,57 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[192]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>                   rec  rec_yds  rec_td  rec_long  rush_td  rec_yac  targets  \
+player                                                                         
+Mecole Hardman      77      905       4        53        1      693      107   
+Deebo Samuel        87     1559       7        83        9      922      135   
+Jarvis Landry       69      733       4        40        3      365      111   
+Chris Godwin       119     1468       8        52        1      724      166   
+Kendrick Bourne     67      953       7        75        0      445       84   
+Amon-Ra St. Brown   90      912       5        37        1      424      119   
+Tyler Boyd          83      939       6        68        0      434      117   
+Ja&#39;Marr Chase      106     1823      14        82        0      822      163   
+Hunter Renfrow     114     1120       9        54        0      504      146   
+Cole Beasley       103      917       1        29        0      405      139   
+Jaylen Waddle      104     1015       6        57        1      439      140   
+Cooper Kupp        182     2503      22        70        0     1059      242   
+Diontae Johnson    126     1408       9        50        0      575      199   
+Tyreek Hill        158     1879      12        75        0      765      218   
+Brandon Aiyuk       65      961       5        43        0      385       99   
+Antonio Brown       61      764       8        62        0      303       89   
+CeeDee Lamb         85     1166       6        49        0      457      132   
+Davante Adams      156     1822      14        59        0      696      211   
+Marquise Brown     107     1245       8        49        0      453      170   
+Darnell Mooney      92     1148       4        64        1      414      153   
 
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>player
-Cooper Kupp            42.309229
-Tyreek Hill            40.713145
-Ja&#39;Marr Chase          45.090510
-Davante Adams          38.199780
-Justin Jefferson       30.360206
-Stefon Diggs           26.742108
-Deebo Samuel           59.140475
-Mike Evans             24.983563
-Chris Godwin           49.318801
-Diontae Johnson        40.838068
-Tee Higgins            30.285714
-Tyler Lockett          25.152905
-D.J. Moore             34.658188
-Mike Williams          34.529506
-Marquise Brown         36.385542
-A.J. Brown             25.542169
-Brandin Cooks          31.005819
-Michael Pittman Jr.    34.666667
-Terry McLaurin         28.167808
-CeeDee Lamb            39.193825
-Darnell Mooney         36.062718
-Keenan Allen           29.613357
-Hunter Renfrow         45.000000
-D.K. Metcalf           32.749077
-Chase Claypool         30.526316
-Christian Kirk         23.523717
-Jaylen Waddle          43.251232
-Marvin Jones           16.798419
-Van Jefferson          30.300000
-Gabriel Davis          21.261445
-DeVonta Smith          27.663934
-Jakobi Meyers          25.359343
-Amari Cooper           26.082474
-Brandon Aiyuk          40.062435
-Kendrick Bourne        46.694648
-Tyler Boyd             46.219382
-Cole Beasley           44.165758
-Amon-Ra St. Brown      46.491228
-Mecole Hardman         76.574586
-Russell Gage           33.101045
-A.J. Green             21.344340
-Odell Beckham Jr.      28.121212
-Emmanuel Sanders       17.424242
-Adam Thielen           33.205619
-Tim Patrick            30.897436
-Courtland Sutton       17.396907
-Antonio Brown          39.659686
-Marquez Callaway       21.628838
-Byron Pringle          34.278003
-Jarvis Landry          49.795362
-dtype: float64</pre>
+                   yac_percentage  
+player                             
+Mecole Hardman               76.6  
+Deebo Samuel                 59.1  
+Jarvis Landry                49.8  
+Chris Godwin                 49.3  
+Kendrick Bourne              46.7  
+Amon-Ra St. Brown            46.5  
+Tyler Boyd                   46.2  
+Ja&#39;Marr Chase                45.1  
+Hunter Renfrow               45.0  
+Cole Beasley                 44.2  
+Jaylen Waddle                43.3  
+Cooper Kupp                  42.3  
+Diontae Johnson              40.8  
+Tyreek Hill                  40.7  
+Brandon Aiyuk                40.1  
+Antonio Brown                39.7  
+CeeDee Lamb                  39.2  
+Davante Adams                38.2  
+Marquise Brown               36.4  
+Darnell Mooney               36.1  
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -17791,7 +17110,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[193]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
@@ -17846,7 +17165,7 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[194]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Who leads in YAC from 2019-2022?</span>
@@ -17901,7 +17220,7 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[195]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Just for reference</span>
@@ -17953,7 +17272,7 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[196]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">rb_data</span><span class="p">[[</span><span class="s2">&quot;player&quot;</span><span class="p">,</span> <span class="s2">&quot;year&quot;</span><span class="p">,</span> <span class="s2">&quot;position&quot;</span><span class="p">,</span> <span class="s2">&quot;team&quot;</span><span class="p">,</span> <span class="s2">&quot;rush_yds&quot;</span><span class="p">,</span> <span class="s2">&quot;rush_att&quot;</span><span class="p">,</span> <span class="s2">&quot;rush_td&quot;</span><span class="p">,</span> <span class="s2">&quot;rec_td&quot;</span><span class="p">,</span> <span class="s2">&quot;targets&quot;</span><span class="p">,</span> <span class="s2">&quot;rec_yds&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -17974,7 +17293,7 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[196]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[45]:</div>
 
 
 
@@ -18091,11 +17410,11 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[197]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># A look into the top 10 rushers in 2021</span>
-<span class="n">rush_rank</span> <span class="o">=</span> <span class="n">df4</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;rush_yds&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">rush_rank</span> <span class="o">=</span> <span class="n">rushers</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;rush_yds&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="c1">#These are the top 10 rushers for 2021</span>
 <span class="n">rush_rank</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </pre></div>
@@ -18115,7 +17434,7 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[197]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[46]:</div>
 
 
 
@@ -18297,10 +17616,11 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[198]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># YPC for the top 50</span>
+
 <span class="n">ypc</span> <span class="o">=</span> <span class="n">rb_data</span><span class="p">[</span><span class="s1">&#39;rush_yds&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">rb_data</span><span class="p">[</span><span class="s1">&#39;rush_att&#39;</span><span class="p">]</span>
 <span class="n">rb_data</span><span class="p">[</span><span class="s2">&quot;ypc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">ypc</span>
 <span class="n">rb_data</span> <span class="o">=</span> <span class="n">rb_data</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
@@ -18322,24 +17642,7 @@ Name: rec_yac, Length: 367, dtype: int64
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Owner\AppData\Local\Temp\ipykernel_14692\2072177943.py:3: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  rb_data[&#34;ypc&#34;] = ypc
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[198]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
 
 
 
@@ -18523,16 +17826,22 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[199]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Top 10 YPC (yards per carry) leaders 2021-2022</span>
-<span class="n">df4</span><span class="p">[</span><span class="s1">&#39;ypc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;rush_yds&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;rush_att&#39;</span><span class="p">]</span>
-<span class="c1"># Sort the DataFrame by &#39;ypc&#39; in descending order and select the top 10</span>
-<span class="n">top_10</span> <span class="o">=</span> <span class="n">df4</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ypc&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Most efficient rushers</span>
+ 
+<span class="c1"># Top 10 YPC (yards per carry) leaders 2021-2022</span>
+<span class="n">rushers</span><span class="p">[</span><span class="s1">&#39;ypc&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">rushers</span><span class="p">[</span><span class="s1">&#39;rush_yds&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">rushers</span><span class="p">[</span><span class="s1">&#39;rush_att&#39;</span><span class="p">]</span>
+
+<span class="c1"># Filter to include only players with a minimum of 50 carries</span>
+<span class="n">rushers_50_plus_carries</span> <span class="o">=</span> <span class="n">rushers</span><span class="p">[</span><span class="n">rushers</span><span class="p">[</span><span class="s1">&#39;rush_att&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">]</span>
+
+<span class="c1"># Sort the filtered DataFrame by &#39;ypc&#39; in descending order and select the top 10</span>
+<span class="n">top_10</span> <span class="o">=</span> <span class="n">rushers_50_plus_carries</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ypc&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="c1"># Print the &#39;player&#39; and &#39;ypc&#39; columns for these top 10 players</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">top_10</span><span class="p">[[</span><span class="s1">&#39;player&#39;</span><span class="p">,</span> <span class="s1">&#39;ypc&#39;</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">top_10</span><span class="p">[[</span><span class="s1">&#39;player&#39;</span><span class="p">,</span> <span class="s1">&#39;ypc&#39;</span><span class="p">,</span> <span class="s1">&#39;rush_1st%&#39;</span><span class="p">]])</span>
 </pre></div>
 
      </div>
@@ -18554,71 +17863,17 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>               player        ypc
-303       Dawson Knox        inf
-206        C.J. Moore  28.000000
-215       Greg Dortch  24.000000
-174      Scott Miller  21.500000
-238         John Ross  16.000000
-123       Jamal Agnew  15.857143
-201  Emmanuel Sanders  15.500000
-156  D&#39;Wayne Eskridge  14.750000
-244     Cyril Grayson  14.000000
-245     Sean Chandler  14.000000
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[200]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Although the above is true, Im only interested in seeing players who got a min of 100 carries</span>
-<span class="n">df4_filtered</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="n">df4</span><span class="p">[</span><span class="s1">&#39;rush_att&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">100</span><span class="p">]</span>
-<span class="c1"># Sort the DataFrame by &#39;ypc&#39; in descending order and select the top 10</span>
-<span class="n">top_10_</span> <span class="o">=</span> <span class="n">df4_filtered</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;ypc&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="c1"># Printing filtered 10 leading rushers with a minimum of 100 carries, not excluding other positions </span>
-<span class="nb">print</span><span class="p">(</span><span class="n">top_10_</span><span class="p">[[</span><span class="s1">&#39;player&#39;</span><span class="p">,</span> <span class="s1">&#39;ypc&#39;</span><span class="p">]])</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>              player       ypc
-28     Rashaad Penny  6.294118
-25        Josh Allen  6.254098
-24     Lamar Jackson  5.766917
-22       Jalen Hurts  5.640288
-29      Tony Pollard  5.530769
-1         Nick Chubb  5.521930
-26     Miles Sanders  5.503650
-0    Jonathan Taylor  5.454819
-44  D&#39;Ernest Johnson  5.340000
-40     Chase Edmonds  5.103448
+<pre>               player       ypc  rush_1st%
+28      Rashaad Penny  6.294118      4.250
+25         Josh Allen  6.254098      2.302
+64  Dontrell Hilliard  6.250000      3.733
+61       Deebo Samuel  6.186441      2.810
+54      Justin Fields  5.833333      3.273
+58    Patrick Mahomes  5.772727      2.640
+24      Lamar Jackson  5.766917      2.771
+22        Jalen Hurts  5.640288      2.482
+29       Tony Pollard  5.530769      3.714
+1          Nick Chubb  5.521930      3.738
 </pre>
 </div>
 </div>
@@ -18643,11 +17898,11 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[201]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># TE&#39;s only</span>
-<span class="n">te_data</span>
+<span class="n">te_data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -18665,7 +17920,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[201]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
 
 
 
@@ -18832,153 +18087,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       <td>NOR</td>
       <td>40.0</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>17557</th>
-      <td>Zach Ertz</td>
-      <td>2019</td>
-      <td>TE</td>
-      <td>PHI</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>17</td>
-      <td>False</td>
-      <td>outdoors</td>
-      <td>grass</td>
-      <td>47</td>
-      <td>46</td>
-      <td>7</td>
-      <td>-2.0</td>
-      <td>DAL</td>
-      <td>47.0</td>
-    </tr>
-    <tr>
-      <th>17558</th>
-      <td>Zach Gentry</td>
-      <td>2019</td>
-      <td>TE</td>
-      <td>PIT</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>24</td>
-      <td>False</td>
-      <td>outdoors</td>
-      <td>grass</td>
-      <td>79</td>
-      <td>36</td>
-      <td>3</td>
-      <td>-6.0</td>
-      <td>SFO</td>
-      <td>44.5</td>
-    </tr>
-    <tr>
-      <th>17559</th>
-      <td>Zach Gentry</td>
-      <td>2019</td>
-      <td>TE</td>
-      <td>PIT</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>27</td>
-      <td>False</td>
-      <td>outdoors</td>
-      <td>grass</td>
-      <td>76</td>
-      <td>72</td>
-      <td>1</td>
-      <td>-3.5</td>
-      <td>PIT</td>
-      <td>45.5</td>
-    </tr>
-    <tr>
-      <th>17560</th>
-      <td>Zach Gentry</td>
-      <td>2019</td>
-      <td>TE</td>
-      <td>PIT</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>17</td>
-      <td>False</td>
-      <td>outdoors</td>
-      <td>grass</td>
-      <td>71</td>
-      <td>61</td>
-      <td>9</td>
-      <td>-6.0</td>
-      <td>LAC</td>
-      <td>42.5</td>
-    </tr>
-    <tr>
-      <th>17561</th>
-      <td>Zach Gentry</td>
-      <td>2019</td>
-      <td>TE</td>
-      <td>PIT</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>...</td>
-      <td>10</td>
-      <td>False</td>
-      <td>outdoors</td>
-      <td>grass</td>
-      <td>31</td>
-      <td>67</td>
-      <td>6</td>
-      <td>-1.0</td>
-      <td>PIT</td>
-      <td>37.0</td>
-    </tr>
   </tbody>
 </table>
-<p>4711 rows × 66 columns</p>
+<p>5 rows × 66 columns</p>
 </div>
 </div>
 
@@ -18993,7 +18104,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[202]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The only TEs to produce over 2000 yards over the last 3 full seasons. </span>
@@ -19054,7 +18165,7 @@ Zach Ertz       203     2079      12        47        0      721      327
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[203]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lets first try to define wins and losses. Since the data takes in every play, there is duplicate data for scores that exist.</span>
@@ -19085,7 +18196,7 @@ Zach Ertz       203     2079      12        47        0      721      327
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[203]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[53]:</div>
 
 
 
@@ -19116,7 +18227,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[204]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lets get rid of duplicate games since the dataframe is factoring in players from the same team.</span>
@@ -19142,7 +18253,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[204]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
 
 
 
@@ -19290,7 +18401,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[205]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># This is all the years I have on wins and losses</span>
@@ -19312,7 +18423,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[205]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
 
 
 
@@ -19332,7 +18443,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[206]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The probability the home team won a game</span>
@@ -19358,7 +18469,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[206]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
 
 
 
@@ -19417,7 +18528,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[207]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Here is the wins, losses, and ties in percentage</span>
@@ -19439,7 +18550,7 @@ Name: winning_team, Length: 19973, dtype: object</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[207]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[60]:</div>
 
 
 
@@ -19463,7 +18574,7 @@ Name: count, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[208]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
@@ -19514,7 +18625,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[209]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Derive a win/loss indicator</span>
@@ -19531,7 +18642,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[210]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Next I want to specifically look at passers to derive efficiency with winning</span>
@@ -19551,7 +18662,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[211]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># average passing statistics for winning scenarios</span>
@@ -19574,7 +18685,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[211]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
 
 
 
@@ -19640,7 +18751,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[212]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Applying the provided logic to determine the winning team</span>
@@ -19677,7 +18788,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[212]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
 
 
 
@@ -19752,7 +18863,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[213]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setting up the data for the bar graph</span>
@@ -19824,7 +18935,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[214]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Setting up the data for the bar graph</span>
@@ -19896,13 +19007,21 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[215]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[69]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Preparing data for scatter plot - passer rating vs win probability</span>
-<span class="n">scatter_data</span> <span class="o">=</span> <span class="n">passing_data</span><span class="p">[[</span><span class="s1">&#39;pass_rating&#39;</span><span class="p">,</span> <span class="s1">&#39;win&#39;</span><span class="p">]]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Ensure Copy-on-Write is enabled (for pandas versions that support this feature)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">copy_on_write</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Preparing data for scatter plot - passer rating vs win probability</span>
+<span class="c1"># Use .copy() to explicitly create a copy of the slice</span>
+<span class="n">scatter_data</span> <span class="o">=</span> <span class="n">passing_data</span><span class="p">[[</span><span class="s1">&#39;pass_rating&#39;</span><span class="p">,</span> <span class="s1">&#39;win&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># Binning passer ratings for better visualization</span>
+<span class="c1"># Use .loc to ensure that the operation is performed on the DataFrame copy directly</span>
 <span class="n">scatter_data</span><span class="p">[</span><span class="s1">&#39;pass_rating_binned&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">cut</span><span class="p">(</span><span class="n">scatter_data</span><span class="p">[</span><span class="s1">&#39;pass_rating&#39;</span><span class="p">],</span> <span class="n">bins</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
 
 <span class="c1"># Calculating win probability for each bin</span>
@@ -19938,13 +19057,7 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>C:\Users\Owner\AppData\Local\Temp\ipykernel_14692\2005130408.py:5: SettingWithCopyWarning: 
-A value is trying to be set on a copy of a slice from a DataFrame.
-Try using .loc[row_indexer,col_indexer] = value instead
-
-See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-  scatter_data[&#39;pass_rating_binned&#39;] = pd.cut(scatter_data[&#39;pass_rating&#39;], bins=10)
-C:\Users\Owner\AppData\Local\Temp\ipykernel_14692\2005130408.py:8: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
+<pre>C:\Users\Owner\AppData\Local\Temp\ipykernel_6916\1508378945.py:16: FutureWarning: The default of observed=False is deprecated and will be changed to True in a future version of pandas. Pass observed=False to retain current behavior or observed=True to adopt the future default and silence this warning.
   win_probability = scatter_data.groupby(&#39;pass_rating_binned&#39;)[&#39;win&#39;].mean()
 </pre>
 </div>
@@ -19988,10 +19101,10 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[216]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[70]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plays</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/plays.csv&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">plays</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\ALL NFL pbp\plays.csv&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20004,13 +19117,13 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[217]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[71]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Making a year column from the game id info.</span>
 
 <span class="n">plays</span><span class="p">[</span><span class="s1">&#39;year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">plays</span><span class="p">[</span><span class="s1">&#39;game_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span><span class="o">.</span><span class="n">str</span><span class="p">[:</span><span class="mi">4</span><span class="p">]</span>
-<span class="n">plays</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">plays</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -20028,7 +19141,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[217]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[71]:</div>
 
 
 
@@ -20147,9 +19260,57 @@ class="
       <td>44</td>
       <td>2021</td>
     </tr>
+    <tr>
+      <th>3</th>
+      <td>2021010315</td>
+      <td>386</td>
+      <td>SF</td>
+      <td>SEA</td>
+      <td>(9:39) M.Dickson punts 63 yards to SF 11, Cent...</td>
+      <td>1</td>
+      <td>4</td>
+      <td>1</td>
+      <td>SEA</td>
+      <td>Punt</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>63.0</td>
+      <td>NaN</td>
+      <td>63</td>
+      <td>84</td>
+      <td>2021</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2021010315</td>
+      <td>553</td>
+      <td>SF</td>
+      <td>SEA</td>
+      <td>(6:41) M.Wishnowsky punts 40 yards to SEA 32, ...</td>
+      <td>1</td>
+      <td>4</td>
+      <td>3</td>
+      <td>SF</td>
+      <td>Punt</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>NaN</td>
+      <td>40.0</td>
+      <td>NaN</td>
+      <td>40</td>
+      <td>38</td>
+      <td>2021</td>
+    </tr>
   </tbody>
 </table>
-<p>3 rows × 28 columns</p>
+<p>5 rows × 28 columns</p>
 </div>
 </div>
 
@@ -20164,7 +19325,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[218]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of times from 2019-2020 that an extra point kicked was missed</span>
@@ -20188,7 +19349,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[218]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
 
 
 
@@ -20221,7 +19382,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[219]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[73]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># of the total kicks missed, how many were for extra point?</span>
@@ -20245,7 +19406,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[219]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[73]:</div>
 
 
 
@@ -20270,7 +19431,7 @@ Name: count, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[220]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Heres a pie chart showing the extra point kick success rate</span>
@@ -20326,7 +19487,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[221]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># I feel that 2021 season experienced higher than average made extra point kicks. Let check it out. </span>
@@ -20352,7 +19513,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[221]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
 
 
 
@@ -20364,6 +19525,46 @@ Kick Attempt No Good     5.882353
 Name: count, dtype: float64</pre>
 </div>
 
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">openpyxl</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">openpyxl</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>3.1.2
+</pre>
+</div>
 </div>
 
 </div>
@@ -20386,105 +19587,17 @@ Name: count, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[237]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="c1"># 2021 pbp data only shows plays of teams for the year of 2021. There are one or possibly 2 games missing for each team that were played in Janaury 2021</span>
-<span class="c1">#(relevant_plays[&#39;yard_gained&#39;] &gt;= 5)</span>
-<span class="n">pbp_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./FOOTBALL/ALL NFL pbp/pbp-2021.csv&quot;</span><span class="p">)</span>
-<span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
-<span class="n">relevant_plays</span> <span class="o">=</span> <span class="n">pbp_data</span><span class="p">[</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2021 pbp data only shows plays of teams for the year of 2021. There are one or possibly 2 games missing for each team that were played in Janaury 2021</span>
+<span class="c1">#  (relevant_plays[&#39;yard_gained&#39;] &gt;= 5)</span>
+<span class="n">pbp_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\pbp_2021.xlsx&quot;</span><span class="p">)</span>
 </pre></div>
 
      </div>
 </div>
 </div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[238]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">relevant_plays</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[238]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>gameId</th>
-      <th>game_date</th>
-      <th>quarter</th>
-      <th>minute</th>
-      <th>second</th>
-      <th>offense_team</th>
-      <th>defense_team</th>
-      <th>down</th>
-      <th>togo</th>
-      <th>yard_line</th>
-      <th>...</th>
-      <th>is_interception</th>
-      <th>is_fumble</th>
-      <th>is_penalty</th>
-      <th>is_twopoint_conversion</th>
-      <th>is_twopoint_conversion_success</th>
-      <th>rush_direction</th>
-      <th>yard_line_fixed</th>
-      <th>yard_line_direction</th>
-      <th>is_penalty_accepted</th>
-      <th>penalty_team</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<p>0 rows × 43 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
@@ -20492,20 +19605,25 @@ Name: count, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[241]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter the DataFrame for relevant plays</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Assuming pbp_data is your DataFrame</span>
+<span class="c1"># Filter plays that are either passes or rushes</span>
 <span class="n">relevant_plays</span> <span class="o">=</span> <span class="n">pbp_data</span><span class="p">[(</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;is_pass&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;is_rush&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
-<span class="c1"># Convert &#39;yard_gained&#39; to integers</span>
+<span class="c1"># Convert &#39;yard_gained&#39; to numeric once</span>
 <span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span>
 
 <span class="c1"># Define success</span>
-<span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;success&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;is_touchdown&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> 
-                             <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;series_first_down&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> 
-                          <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">|</span> 
-                             <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;down_picked_up&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;success&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;is_touchdown&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> \
+                            <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;series_first_down&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="o">|</span> \
+                            <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;yard_gained&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="o">|</span> \
+                            <span class="p">(</span><span class="n">relevant_plays</span><span class="p">[</span><span class="s1">&#39;down_picked_up&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -20518,18 +19636,16 @@ Name: count, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[242]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate success rate by play type</span>
+<span class="c1"># Assuming &#39;play_type&#39; is the column distinguishing between passes and rushes</span>
+<span class="n">success_rate</span> <span class="o">=</span> <span class="n">relevant_plays</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;play_type&#39;</span><span class="p">)[</span><span class="s1">&#39;success&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 
-<span class="c1"># Calculate success rate</span>
-<span class="n">success_rate</span> <span class="o">=</span> <span class="n">relevant_plays</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;play_type&#39;</span><span class="p">)[</span><span class="s1">&#39;success&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-
-<span class="c1"># Plotting</span>
+<span class="c1"># Now, plotting success_rate</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">success_rate</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">success_rate</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">barplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;play_type&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;success&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">success_rate</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Success Rate by Play Type&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Play Type&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Success Rate&#39;</span><span class="p">)</span>
@@ -20575,7 +19691,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[243]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[81]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Printing success rates per play</span>
@@ -20598,7 +19714,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[243]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[81]:</div>
 
 
 
@@ -20622,7 +19738,7 @@ Name: success, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[244]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pbp_data</span><span class="o">.</span><span class="n">columns</span>
@@ -20643,7 +19759,7 @@ Name: success, dtype: float64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[244]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[82]:</div>
 
 
 
@@ -20652,13 +19768,13 @@ Name: success, dtype: float64</pre>
 <pre>Index([&#39;gameId&#39;, &#39;game_date&#39;, &#39;quarter&#39;, &#39;minute&#39;, &#39;second&#39;, &#39;offense_team&#39;,
        &#39;defense_team&#39;, &#39;down&#39;, &#39;togo&#39;, &#39;yard_line&#39;, &#39;penalty_type&#39;,
        &#39;series_first_down&#39;, &#39;penalty_yards&#39;, &#39;isno_play&#39;, &#39;description&#39;,
-       &#39;season_year&#39;, &#39;Unnamed: 16&#39;, &#39;yards&#39;, &#39;yard_gained&#39;, &#39;down_picked_up&#39;,
-       &#39;formation&#39;, &#39;play_type&#39;, &#39;is_rush&#39;, &#39;is_pass&#39;, &#39;is_incomplete&#39;,
-       &#39;rush_yds&#39;, &#39;pass_yds&#39;, &#39;is_touchdown&#39;, &#39;pass_type&#39;, &#39;is_sack&#39;,
-       &#39;is_challenge&#39;, &#39;is_challenge_reversed&#39;, &#39;is_measurement&#39;,
-       &#39;is_interception&#39;, &#39;is_fumble&#39;, &#39;is_penalty&#39;, &#39;is_twopoint_conversion&#39;,
+       &#39;season_year&#39;, &#39;yards&#39;, &#39;yard_gained&#39;, &#39;down_picked_up&#39;, &#39;formation&#39;,
+       &#39;play_type&#39;, &#39;is_rush&#39;, &#39;is_pass&#39;, &#39;is_incomplete&#39;, &#39;rush_yds&#39;,
+       &#39;pass_yds&#39;, &#39;is_touchdown&#39;, &#39;pass_type&#39;, &#39;is_sack&#39;, &#39;is_challenge&#39;,
+       &#39;is_challenge_reversed&#39;, &#39;is_measurement&#39;, &#39;is_interception&#39;,
+       &#39;is_fumble&#39;, &#39;is_penalty&#39;, &#39;is_twopoint_conversion&#39;,
        &#39;is_twopoint_conversion_success&#39;, &#39;rush_direction&#39;, &#39;yard_line_fixed&#39;,
-       &#39;yard_line_direction&#39;, &#39;is_penalty_accepted&#39;, &#39;penalty_team&#39;],
+       &#39;yard_line_direction&#39;, &#39;is_penalty_accepted&#39;, &#39;penalty_team&#39;, &#39;not_p&#39;],
       dtype=&#39;object&#39;)</pre>
 </div>
 
@@ -20673,7 +19789,7 @@ Name: success, dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[245]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Turnover Analysis</span>
@@ -20731,7 +19847,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[246]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Team yards during the 2021 year. Not season. </span>
@@ -20753,7 +19869,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[246]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[84]:</div>
 
 
 
@@ -20996,7 +20112,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[247]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[85]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Most penalized team</span>
@@ -21085,7 +20201,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[248]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[86]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Average number of penalties called per NFL game 2019-2021</span>
@@ -21136,7 +20252,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[249]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[87]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The sucess rate of picking up a 4th and down</span>
@@ -21184,7 +20300,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[250]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[88]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Heres a bar chart showing all the successful and unsuccessful 4th down conversions by quarter.</span>
@@ -21267,7 +20383,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[251]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[89]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># First lets take my team, the New Orleans Saints</span>
@@ -21286,7 +20402,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[252]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[90]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Sum by playtype for the Saints</span>
@@ -21310,7 +20426,7 @@ class="
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[252]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[90]:</div>
 
 
 
@@ -21343,7 +20459,7 @@ Name: count, dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[253]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[91]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Offensive Efficiency by downs. Total yards on average gained on different downs</span>
@@ -21394,10 +20510,10 @@ Name: yards, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[258]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Red Zone Success Rate</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Red Zone Points Success Rate in 2021</span>
 <span class="c1"># Saints</span>
 
 <span class="c1">#all redzone plays</span>
@@ -21443,7 +20559,92 @@ Red Zone Saints Success Rate:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[259]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[93]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tracking</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;C:\Users\Owner\Notebook projects\FOOTBALL\tracking2020.csv&quot;</span><span class="p">)</span>
+<span class="n">tracking</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[93]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;game_id&#39;, &#39;player_id&#39;, &#39;play_id&#39;, &#39;date_id&#39;, &#39;frame_id&#39;, &#39;time&#39;, &#39;x&#39;,
+       &#39;y&#39;, &#39;s&#39;, &#39;a&#39;, &#39;dis&#39;, &#39;o&#39;, &#39;dir&#39;, &#39;event&#39;, &#39;name&#39;, &#39;number&#39;, &#39;position&#39;,
+       &#39;team&#39;, &#39;play_dir&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[94]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Identifiers in the team column</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tracking</span><span class="p">[</span><span class="s1">&#39;team&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;home&#39; &#39;away&#39; &#39;football&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># More saints 2021 stats using pbp</span>
@@ -21467,7 +20668,7 @@ Red Zone Saints Success Rate:
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[259]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
 
 
 
@@ -21501,7 +20702,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[261]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[96]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#league average offensive metrics</span>
@@ -21525,7 +20726,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[261]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[96]:</div>
 
 
 
@@ -21554,26 +20755,15 @@ dtype: float64</pre>
 
 </div>
 
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Fantasy-Football-Stats-Conversion">Fantasy Football Stats Conversion<a class="anchor-link" href="#Fantasy-Football-Stats-Conversion">&#182;</a></h3>
-</div>
-</div>
-</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[262]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For fantasy Foorball</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># For fantasy Football. Yahoo points format</span>
 
 <span class="c1"># Passing</span>
 <span class="n">POINTS_PASS_TD</span> <span class="o">=</span> <span class="mi">4</span>
@@ -21603,6 +20793,22 @@ dtype: float64</pre>
 </div>
 </div>
 
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[98]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">run_plays</span> <span class="o">=</span> <span class="n">pbp_data</span><span class="p">[</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;play_type&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;RUSH&#39;</span><span class="p">]</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -21619,10 +20825,10 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[265]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  Stats on Lamar Jackson, AND Joe Burrow</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#  Stats on Lamar Jackson, QB</span>
 <span class="n">big_truss</span> <span class="o">=</span> <span class="n">pbp_data</span><span class="p">[</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;L.JACKSON&#39;</span><span class="p">)]</span>
 <span class="n">cool_joe</span> <span class="o">=</span> <span class="n">pbp_data</span><span class="p">[</span><span class="n">pbp_data</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;J.BURROW&#39;</span><span class="p">)]</span>
 </pre></div>
@@ -21637,20 +20843,84 @@ dtype: float64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[266]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[100]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lamar, formation, play type, yards on play, rush, pass</span>
-<span class="c1"># I will limit the outcome to 10 inorder not to show every single instance</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">big_truss</span><span class="o">.</span><span class="n">columns</span>
+</pre></div>
 
-<span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Initialize a counter</span>
+     </div>
+</div>
+</div>
+</div>
 
-<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">big_truss</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
-    <span class="k">if</span> <span class="s1">&#39;L.JACKSON&#39;</span> <span class="ow">in</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">index</span><span class="p">,</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;formation&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;play_type&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;yards&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;is_rush&#39;</span><span class="p">],</span> <span class="n">row</span><span class="p">[</span><span class="s1">&#39;is_pass&#39;</span><span class="p">])</span>
-        <span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>  <span class="c1"># Increment the counter</span>
-        <span class="k">if</span> <span class="n">counter</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>  <span class="c1"># Check if 10 rows have been printed</span>
-            <span class="k">break</span>  <span class="c1"># Exit the loop</span>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[100]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>Index([&#39;gameId&#39;, &#39;game_date&#39;, &#39;quarter&#39;, &#39;minute&#39;, &#39;second&#39;, &#39;offense_team&#39;,
+       &#39;defense_team&#39;, &#39;down&#39;, &#39;togo&#39;, &#39;yard_line&#39;, &#39;penalty_type&#39;,
+       &#39;series_first_down&#39;, &#39;penalty_yards&#39;, &#39;isno_play&#39;, &#39;description&#39;,
+       &#39;season_year&#39;, &#39;yards&#39;, &#39;yard_gained&#39;, &#39;down_picked_up&#39;, &#39;formation&#39;,
+       &#39;play_type&#39;, &#39;is_rush&#39;, &#39;is_pass&#39;, &#39;is_incomplete&#39;, &#39;rush_yds&#39;,
+       &#39;pass_yds&#39;, &#39;is_touchdown&#39;, &#39;pass_type&#39;, &#39;is_sack&#39;, &#39;is_challenge&#39;,
+       &#39;is_challenge_reversed&#39;, &#39;is_measurement&#39;, &#39;is_interception&#39;,
+       &#39;is_fumble&#39;, &#39;is_penalty&#39;, &#39;is_twopoint_conversion&#39;,
+       &#39;is_twopoint_conversion_success&#39;, &#39;rush_direction&#39;, &#39;yard_line_fixed&#39;,
+       &#39;yard_line_direction&#39;, &#39;is_penalty_accepted&#39;, &#39;penalty_team&#39;, &#39;not_p&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[101]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Define a function to determine if a play is successful based on positive gain, touchdown, or 2-point conversion</span>
+<span class="k">def</span> <span class="nf">positive_play</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;yards&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;is_touchdown&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">&#39;is_twopoint_conversion_success&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Apply this function across the DataFrame to create a new &#39;positive_play&#39; column</span>
+<span class="n">big_truss</span><span class="p">[</span><span class="s1">&#39;positive_play&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">big_truss</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">positive_play</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Group by &#39;formation&#39; and &#39;play_type&#39;, and calculate the required aggregates</span>
+<span class="n">aggregated</span> <span class="o">=</span> <span class="n">big_truss</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;formation&#39;</span><span class="p">,</span> <span class="s1">&#39;play_type&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">agg</span><span class="p">(</span>
+    <span class="n">total_yards</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;yards&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">),</span>
+    <span class="n">count</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;yards&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">),</span>  <span class="c1"># Total count of plays</span>
+    <span class="n">positive_plays</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">NamedAgg</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s1">&#39;is_successful&#39;</span><span class="p">,</span> <span class="n">aggfunc</span><span class="o">=</span><span class="s1">&#39;sum&#39;</span><span class="p">)</span>  <span class="c1"># Assuming &#39;is_successful&#39; indicates positive plays</span>
+<span class="p">)</span>
+
+<span class="c1"># Calculate the percentage of positive plays</span>
+<span class="n">aggregated</span><span class="p">[</span><span class="s1">&#39;positive_play rate %&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">aggregated</span><span class="p">[</span><span class="s1">&#39;positive_plays&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">aggregated</span><span class="p">[</span><span class="s1">&#39;count&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Reset index to make &#39;formation&#39; and &#39;play_type&#39; regular columns</span>
+<span class="n">aggregated</span> <span class="o">=</span> <span class="n">aggregated</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="c1"># Display the first 15 rows of the aggregated DataFrame</span>
+<span class="n">aggregated</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -21671,18 +20941,60 @@ dtype: float64</pre>
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>50 SHOTGUN PASS 10 0 1
-67 SHOTGUN PASS 8 0 1
-79 SHOTGUN PASS 7 0 1
-168 SHOTGUN SCRAMBLE 2 1 0
-184 SHOTGUN PASS 1 0 1
-185 SHOTGUN PASS 1 0 1
-234 SHOTGUN FUMBLES 0 0 0
-374 SHOTGUN RUSH -1 1 0
-402 SHOTGUN RUSH -3 1 0
-408 SHOTGUN SACK -4 0 0
-</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp\ipykernel_6916\2615971223.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      9</span> 
+<span class="ansi-green-fg">     10</span> <span class="ansi-red-intense-fg ansi-bold"># Group by &#39;formation&#39; and &#39;play_type&#39;, and calculate the required aggregates</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 11</span><span class="ansi-yellow-intense-fg ansi-bold"> aggregated = big_truss.groupby([&#39;formation&#39;, &#39;play_type&#39;]).agg(
+</span><span class="ansi-green-fg">     12</span>     total_yards<span class="ansi-yellow-intense-fg ansi-bold">=</span>pd<span class="ansi-yellow-intense-fg ansi-bold">.</span>NamedAgg<span class="ansi-yellow-intense-fg ansi-bold">(</span>column<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;yards&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> aggfunc<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;sum&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">     13</span>     count<span class="ansi-yellow-intense-fg ansi-bold">=</span>pd<span class="ansi-yellow-intense-fg ansi-bold">.</span>NamedAgg<span class="ansi-yellow-intense-fg ansi-bold">(</span>column<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;yards&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> aggfunc<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#39;count&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span>  <span class="ansi-red-intense-fg ansi-bold"># Total count of plays</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\groupby\generic.py</span> in <span class="ansi-cyan-fg">aggregate</span><span class="ansi-blue-intense-fg ansi-bold">(self, func, engine, engine_kwargs, *args, **kwargs)</span>
+<span class="ansi-green-fg">   1430</span> 
+<span class="ansi-green-fg">   1431</span>         op <span class="ansi-yellow-intense-fg ansi-bold">=</span> GroupByApply<span class="ansi-yellow-intense-fg ansi-bold">(</span>self<span class="ansi-yellow-intense-fg ansi-bold">,</span> func<span class="ansi-yellow-intense-fg ansi-bold">,</span> args<span class="ansi-yellow-intense-fg ansi-bold">=</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> kwargs<span class="ansi-yellow-intense-fg ansi-bold">=</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1432</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>result <span class="ansi-yellow-intense-fg ansi-bold">=</span> op<span class="ansi-yellow-intense-fg ansi-bold">.</span>agg<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1433</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> <span class="ansi-green-intense-fg ansi-bold">not</span> is_dict_like<span class="ansi-yellow-intense-fg ansi-bold">(</span>func<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-green-intense-fg ansi-bold">and</span> result <span class="ansi-green-intense-fg ansi-bold">is</span> <span class="ansi-green-intense-fg ansi-bold">not</span> <span class="ansi-green-intense-fg ansi-bold">None</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">   1434</span>             <span class="ansi-red-intense-fg ansi-bold"># GH #52849</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\apply.py</span> in <span class="ansi-cyan-fg">agg</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    188</span> 
+<span class="ansi-green-fg">    189</span>         <span class="ansi-green-intense-fg ansi-bold">if</span> is_dict_like<span class="ansi-yellow-intense-fg ansi-bold">(</span>func<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 190</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>agg_dict_like<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    191</span>         <span class="ansi-green-intense-fg ansi-bold">elif</span> is_list_like<span class="ansi-yellow-intense-fg ansi-bold">(</span>func<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    192</span>             <span class="ansi-red-intense-fg ansi-bold"># we require a list, but not a &#39;str&#39;</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\apply.py</span> in <span class="ansi-cyan-fg">agg_dict_like</span><span class="ansi-blue-intense-fg ansi-bold">(self)</span>
+<span class="ansi-green-fg">    421</span>         Result of aggregation<span class="ansi-yellow-intense-fg ansi-bold">.</span>
+<span class="ansi-green-fg">    422</span>         &#34;&#34;&#34;
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 423</span><span class="ansi-yellow-intense-fg ansi-bold">         </span><span class="ansi-green-intense-fg ansi-bold">return</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>agg_or_apply_dict_like<span class="ansi-yellow-intense-fg ansi-bold">(</span>op_name<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-blue-intense-fg ansi-bold">&#34;agg&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    424</span> 
+<span class="ansi-green-fg">    425</span>     def compute_dict_like(
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\apply.py</span> in <span class="ansi-cyan-fg">agg_or_apply_dict_like</span><span class="ansi-blue-intense-fg ansi-bold">(self, op_name)</span>
+<span class="ansi-green-fg">   1606</span>             obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;as_index&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-green-intense-fg ansi-bold">True</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> condition<span class="ansi-yellow-intense-fg ansi-bold">=</span>hasattr<span class="ansi-yellow-intense-fg ansi-bold">(</span>obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;as_index&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   1607</span>         ):
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 1608</span><span class="ansi-yellow-intense-fg ansi-bold">             result_index, result_data = self.compute_dict_like(
+</span><span class="ansi-green-fg">   1609</span>                 op_name<span class="ansi-yellow-intense-fg ansi-bold">,</span> selected_obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> selection<span class="ansi-yellow-intense-fg ansi-bold">,</span> kwargs
+<span class="ansi-green-fg">   1610</span>             )
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\apply.py</span> in <span class="ansi-cyan-fg">compute_dict_like</span><span class="ansi-blue-intense-fg ansi-bold">(self, op_name, selected_obj, selection, kwargs)</span>
+<span class="ansi-green-fg">    460</span>         is_groupby <span class="ansi-yellow-intense-fg ansi-bold">=</span> isinstance<span class="ansi-yellow-intense-fg ansi-bold">(</span>obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>DataFrameGroupBy<span class="ansi-yellow-intense-fg ansi-bold">,</span> SeriesGroupBy<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    461</span>         func <span class="ansi-yellow-intense-fg ansi-bold">=</span> cast<span class="ansi-yellow-intense-fg ansi-bold">(</span>AggFuncTypeDict<span class="ansi-yellow-intense-fg ansi-bold">,</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>func<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 462</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>func <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>normalize_dictlike_arg<span class="ansi-yellow-intense-fg ansi-bold">(</span>op_name<span class="ansi-yellow-intense-fg ansi-bold">,</span> selected_obj<span class="ansi-yellow-intense-fg ansi-bold">,</span> func<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    463</span> 
+<span class="ansi-green-fg">    464</span>         is_non_unique_col = (
+
+<span class="ansi-green-intense-fg ansi-bold">~\anaconda3\lib\site-packages\pandas\core\apply.py</span> in <span class="ansi-cyan-fg">normalize_dictlike_arg</span><span class="ansi-blue-intense-fg ansi-bold">(self, how, obj, func)</span>
+<span class="ansi-green-fg">    661</span>             cols <span class="ansi-yellow-intense-fg ansi-bold">=</span> Index<span class="ansi-yellow-intense-fg ansi-bold">(</span>list<span class="ansi-yellow-intense-fg ansi-bold">(</span>func<span class="ansi-yellow-intense-fg ansi-bold">.</span>keys<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>difference<span class="ansi-yellow-intense-fg ansi-bold">(</span>obj<span class="ansi-yellow-intense-fg ansi-bold">.</span>columns<span class="ansi-yellow-intense-fg ansi-bold">,</span> sort<span class="ansi-yellow-intense-fg ansi-bold">=</span><span class="ansi-green-intense-fg ansi-bold">True</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    662</span>             <span class="ansi-green-intense-fg ansi-bold">if</span> len<span class="ansi-yellow-intense-fg ansi-bold">(</span>cols<span class="ansi-yellow-intense-fg ansi-bold">)</span> <span class="ansi-yellow-intense-fg ansi-bold">&gt;</span> <span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 663</span><span class="ansi-yellow-intense-fg ansi-bold">                 </span><span class="ansi-green-intense-fg ansi-bold">raise</span> KeyError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">f&#34;Column(s) {list(cols)} do not exist&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    664</span> 
+<span class="ansi-green-fg">    665</span>         aggregator_types <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">(</span>list<span class="ansi-yellow-intense-fg ansi-bold">,</span> tuple<span class="ansi-yellow-intense-fg ansi-bold">,</span> dict<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: &#34;Column(s) [&#39;is_successful&#39;] do not exist&#34;</pre>
 </div>
 </div>
 
@@ -21690,12 +21002,12 @@ dtype: float64</pre>
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[267]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lamar Jackson stats 2021</span>
@@ -21709,51 +21021,19 @@ dtype: float64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[267]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>yards              3676
-is_rush             130
-is_pass             392
-is_touchdown         23
-is_interception      15
-is_fumble            12
-is_sack              40
-dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[268]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lamar Jacksons Tendendcies </span>
 
 <span class="n">qb_tendencies</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pass_type&#39;</span><span class="p">,</span> <span class="s1">&#39;formation&#39;</span><span class="p">,</span> <span class="s1">&#39;play_type&#39;</span><span class="p">]</span>
 <span class="n">truss</span> <span class="o">=</span> <span class="n">big_truss</span><span class="p">[</span><span class="n">qb_tendencies</span><span class="p">]</span>
-<span class="n">big_truss</span><span class="p">[</span><span class="s1">&#39;play_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">truss</span><span class="p">[</span><span class="s1">&#39;play_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </pre></div>
 
      </div>
@@ -21761,46 +21041,12 @@ dtype: int64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[268]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>play_type
-PASS                    392
-RUSH                     76
-SCRAMBLE                 54
-SACK                     40
-TWO-POINT CONVERSION      7
-QB KNEEL                  6
-CLOCK STOP                4
-FUMBLES                   1
-Name: count, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[269]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Lamar pass types</span>
@@ -21813,44 +21059,12 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[269]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>pass_type
-SHORT RIGHT     108
-SHORT LEFT      103
-SHORT MIDDLE    102
-DEEP RIGHT       33
-DEEP LEFT        25
-DEEP MIDDLE      21
-Name: count, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[270]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># The formation of lamar Jackson plays</span>
@@ -21863,42 +21077,12 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[270]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>formation
-SHOTGUN              521
-NO HUDDLE SHOTGUN     30
-UNDER CENTER          25
-NO HUDDLE              4
-Name: count, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[271]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># looking at Joe Burrows formation numbers</span>
@@ -21910,42 +21094,12 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[271]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>formation
-SHOTGUN              461
-UNDER CENTER          97
-NO HUDDLE SHOTGUN     32
-NO HUDDLE              5
-Name: count, dtype: int64</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[272]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">big_truss</span><span class="p">[</span><span class="s1">&#39;pass_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span>
@@ -21956,44 +21110,12 @@ Name: count, dtype: int64</pre>
 </div>
 </div>
 
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[272]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>pass_type
-SHORT RIGHT     27.55%
-SHORT LEFT      26.28%
-SHORT MIDDLE    26.02%
-DEEP RIGHT       8.42%
-DEEP LEFT        6.38%
-DEEP MIDDLE      5.36%
-Name: proportion, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[273]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">cool_joe</span><span class="p">[</span><span class="s1">&#39;pass_type&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">(</span><span class="n">normalize</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">mul</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;%&#39;</span>
@@ -22002,39 +21124,6 @@ Name: proportion, dtype: object</pre>
      </div>
 </div>
 </div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[273]:</div>
-
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>pass_type
-SHORT RIGHT       31.06%
-SHORT LEFT        27.66%
-SHORT MIDDLE      22.65%
-DEEP RIGHT        10.02%
-DEEP LEFT          5.21%
-DEEP MIDDLE        3.21%
-RIGHT. PENALTY      0.2%
-Name: proportion, dtype: object</pre>
-</div>
-
-</div>
-
-</div>
-
 </div>
 
 </div>

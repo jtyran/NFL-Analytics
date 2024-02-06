@@ -1,25 +1,32 @@
- NFL Data Analytics Project
+# NFL Data Analytics Project
 
-Solving a few real world data related questions involving NFL data.
-Data used was pulled from Kaggle, NFL.com, and Yahoo.com
+## Introduction
+This project delves into the analysis of NFL data spanning from 2018 to 2022, with the aim of uncovering insights into team and player performance, as well as game outcomes. By examining statistical metrics, the purpose was to seek to identify the key factors that drive success in the NFL. In addition to revealing interesting facts and insights within football metrics, this project also serves as an innovative practice tool for inexperienced developers. It offers a hands-on opportunity to better understand some of the capabilities of data analysis using Python.
 
-Overview
-This project is an analysis of NFL data from the past 10 years. The aim is to explore various statistical metrics related to team performance, player performance, and game outcomes to gain insights into the factors that contribute to success in the NFL.
+If you find this information helpful, or if you would like to provide any feedback on how I can improve my project, please feel free to reach out to me at tyran210@gmail.com.
 
-Data Sources
-The data used in this project was sourced from Pro Football Reference. The data includes information on game outcomes, team and player statistics, and individual player information.
+## Data Sources
+Data for this study was meticulously sourced from Pro Football Reference, encompassing detailed records on game outcomes, team and player statistics, and comprehensive player profiles.
 
-Methodology
-The data was cleaned and analyzed using Python and various libraries including Pandas, NumPy, and Matplotlib. The analysis focused on several key areas including:
+## Objective
+To explore and analyze NFL data to answer real-world questions and provide insights into the dynamics of team success, player performance, and game strategies.
 
-Team performance metrics: such as win/loss record, offensive and defensive statistics, and point differentials.
-Player performance metrics: such as passing, rushing, and receiving statistics for quarterbacks, running backs, and wide receivers.
-Game outcomes: exploring the factors that contribute to winning or losing games, including turnovers, penalties, and time of possession.
-Results
-The analysis revealed several key insights, including:
+## Methodology
+Utilizing Python and libraries such as Pandas, NumPy, and Matplotlib, the project undertakes a detailed analysis across several dimensions:
 
-The top performing teams consistently have strong offensive and defensive statistics, and maintain a positive point differential over the course of the season.
-The most successful quarterbacks are those who are able to consistently make accurate passes and avoid turnovers.
-Penalties and turnovers are key factors that contribute to losing games, regardless of other performance metrics.
-Conclusion
-Overall, this project provides valuable insights into the factors that contribute to success in the NFL. The analysis can be used by coaches, players, and analysts to make data-driven decisions and improve performance on the field. The code and data used in this project are available in this repository, and can be easily replicated or built upon for further analysis.
+### Team Performance Metrics: 
+Evaluation of win/loss records, offensive and defensive stats, and point differentials.
+### Player Performance Metrics: 
+Analysis of key statistics for quarterbacks, running backs, and wide receivers, including passing, rushing, and receiving.
+### Game Outcomes: 
+Investigation into the impact of turnovers, penalties, and time of possession on the results of games.
+
+## Results
+Key findings from the analysis include:
+
+High-performing teams exhibit strong offensive and defensive capabilities, coupled with positive point differentials throughout the season.
+Successful quarterbacks demonstrate accuracy and an ability to minimize turnovers.
+Penalties and turnovers play a significant role in game losses, overshadowing other performance metrics.
+
+## Conclusion
+The analysis offers valuable insights into the elements essential for success in the NFL, serving as a resource for coaches, players, and analysts aiming to enhance performance through data-driven strategies. The repository contains all code and data used in this project, facilitating replication and further exploration.
