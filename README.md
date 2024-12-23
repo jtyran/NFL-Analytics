@@ -1,12 +1,12 @@
 # NFL Data Analytics Project
 
-## Introduction
+## About
 This project delves into the analysis of NFL data spanning from 2018 to 2022, with the aim of uncovering insights into team and player performance, as well as game outcomes. By examining statistical metrics, the purpose was to seek to identify the key factors that drive success in the NFL. In addition to revealing interesting facts and insights within football metrics, this project also serves as an innovative practice tool for inexperienced developers. It offers a hands-on opportunity to better understand some of the capabilities of data analysis using Python.
 
 If you find this information helpful, or if you would like to provide any feedback on how I can improve my project, please feel free to reach out to me at tyran210@gmail.com.
 
 ## Data Sources
-Data for this study was meticulously sourced from Pro Football Reference, encompassing detailed records on game outcomes, team and player statistics, and comprehensive player profiles.
+Data for this study was meticulously sourced from Pro Football Reference (https://www.pro-football-reference.com), Next Gen Stats Powered by AWS (https://nextgenstats.nfl.com), and data collected on Kaggle in reference to the NFL Big Data Bowl.
 
 ## Objective
 To explore and analyze NFL data to answer real-world questions and provide insights into the dynamics of team success, player performance, and game strategies.
